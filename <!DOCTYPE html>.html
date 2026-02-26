@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>MMA Fight World</title>
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0b0b0b;
+color:white;
+text-align:center;
+}
+header{
+background:linear-gradient(90deg,#e10600,#ff3c3c);
+padding:25px;
+font-size:32px;
+font-weight:bold;
+letter-spacing:2px;
+animation:fade 2s;
+}
+.card{
+background:#1c1c1c;
+margin:20px;
+padding:20px;
+border-radius:15px;
+transition:.3s;
+box-shadow:0 0 15px rgba(255,0,0,.3);
+}
+.card:hover{
+transform:scale(1.05);
+}
+img{
+width:250px;
+border-radius:15px;
+}
+button{
+padding:12px 25px;
+border:none;
+background:#e10600;
+color:white;
+font-size:16px;
+border-radius:10px;
+cursor:pointer;
+}
+@keyframes fade{
+from{opacity:0}
+to{opacity:1}
+}
+</style>
+</head>
+<body>
+<header>
+🥊 MMA FIGHT WORLD
+</header>
+<div class="card">
+<h2>Cos'è la MMA</h2>
+<p>Sport che unisce striking e grappling: boxe, jiu-jitsu, wrestling e kickboxing.</p>
+</div>
+<div class="card">
+<h2>Fighter famosi</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Conor_McGregor_2018.jpg">
+<p>Conor McGregor</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Khabib_Nurmagomedov_2019.jpg">
+<p>Khabib Nurmagomedov</p>
+</div>
+<div class="card">
+<h2>Modalità Fighter</h2>
+<button onclick="fight()">ATTIVA 🔥</button>
+<audio id="sound" src="https://www.soundjay.com/human/punch-1.mp3"></audio>
+</div>
+<script>
+function fight(){
+document.getElementById("sound").play();
+alert("Sei pronto a combattere 💪");
+}
+</script>
+</body>
+</html>
